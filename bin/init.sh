@@ -144,7 +144,7 @@ done
 # Download docker images. Change to build statements if locally built images are desired.
 SIMAPP_VERSION=$(jq -r '.containers.simapp | select (.!=null)' $INSTALL_DIR/defaults/dependencies.json)
 sed -i "s/<SIMAPP_VERSION_TAG>/$SIMAPP_VERSION-$SAGEMAKER_TAG/g" $INSTALL_DIR/system.env
-docker pull awsdeepracercommunity/deepracer-simapp:$SIMAPP_VERSION-$SAGEMAKER_TAG
+docker pull gerrywang/deepracer-simapp:$SIMAPP_VERSION-$SAGEMAKER_TAG
 
 # create the network sagemaker-local if it doesn't exit
 SAGEMAKER_NW='sagemaker-local'
