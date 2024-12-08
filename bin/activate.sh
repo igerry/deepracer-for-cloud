@@ -213,7 +213,7 @@ if [[ -z "$DR_SIMAPP_SOURCE" || -z "$DR_SIMAPP_VERSION" ]]; then
   echo ""
   echo "Please add the following lines to your system.env file:"
   echo "DR_SIMAPP_SOURCE=gerrywang/deepracer-simapp"
-  echo "DR_SIMAPP_VERSION=${DEFAULT_SIMAPP_VERSION}-vm-cpu"
+  echo "DR_SIMAPP_VERSION=${DEFAULT_SIMAPP_VERSION}-cpu"
   return
 fi
 
